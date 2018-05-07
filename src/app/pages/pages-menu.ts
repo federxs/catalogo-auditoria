@@ -68,6 +68,11 @@ export const MENU_ITEMS: NbMenuItem[] = [
     {
         title: 'Contacto',
         icon: 'nb-person',
-        link: '/pages/tables/smart-table10'
+        children: [
+            {
+                title: 'Nosotros',
+                link: '/pages/tables/smart-table12',
+            }
+        ]
     }
 ];
