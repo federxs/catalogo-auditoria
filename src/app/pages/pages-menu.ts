@@ -12,6 +12,16 @@ export const MENU_ITEMS: NbMenuItem[] = [
     group: true,
   },
   {
+      title: 'Normas',
+      icon: 'nb-tables',
+      children: [
+          {
+              title: 'Consultar',
+              link: '/pages/tables/smart-table',
+          },
+      ],
+  },
+  {
     title: 'UI Features',
     icon: 'nb-keypad',
     link: '/pages/ui-features',
@@ -128,16 +138,6 @@ export const MENU_ITEMS: NbMenuItem[] = [
       {
         title: 'CKEditor',
         link: '/pages/editors/ckeditor',
-      },
-    ],
-  },
-  {
-    title: 'Tables',
-    icon: 'nb-tables',
-    children: [
-      {
-        title: 'Smart Table',
-        link: '/pages/tables/smart-table',
       },
     ],
   },
