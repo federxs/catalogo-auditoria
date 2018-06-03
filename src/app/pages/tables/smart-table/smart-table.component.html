@@ -10,35 +10,37 @@
 </nb-card>
 
 
-<div class="col-lg-6">
-  <nb-card size="large">
-    <nb-card-header>
-      Tabla de Normas
-    </nb-card-header>
-    <nb-card-body>
-      <div class="font-row font-main">
-        <table class="table table-striped">
-          <thead>
-          <th>Norma</th>
-          <th>Categoria</th>
-          <th>Descripcion</th>
-          <th>Link</th>
-          <th>Índice</th>
-          <th>Índice Oculto</th>
-          </thead>
-          <tbody>
-          <tr *ngFor="let norma of normasVevo; let i = index">
-            <td>{{norma.nombre}}</td>
-            <td>{{norma.categoria}}</td>
-            <td>{{norma.descripcion}}</td>
-            <td><a href="{{norma.link}}">Link</a></td>
-            <td>
-              <button type="button">Boton {{i}}</button>
-            </td>
-          </tr>
-          </tbody>
-        </table>
-      </div>
-    </nb-card-body>
-  </nb-card>
+<div class="row">
+  <div class="col-md-12">
+    <nb-card >
+      <nb-card-header>
+        Tabla de Normas
+      </nb-card-header>
+      <nb-card-body>
+        <div class="font-row font-main">
+          <table class="table table-striped">
+            <thead>
+            <th>Norma</th>
+            <th>Categoria</th>
+            <th>Descripcion</th>
+            <th>Link</th>
+            <th>Índice</th>
+            <th>Índice Oculto</th>
+            </thead>
+            <tbody>
+            <tr *ngFor="let norma of normasVevo; let i = index">
+              <td>{{norma.nombre}}</td>
+              <td>{{norma.categoria}}</td>
+              <td>{{norma.descripcion}}</td>
+              <td><a href="{{norma.link}}">Link</a></td>
+              <td>
+                <button type="button">Boton {{i}}</button>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </nb-card-body>
+    </nb-card>
+  </div>
 </div>
