@@ -20,9 +20,11 @@ const routes: Routes = [{
   imports: [
     RouterModule.forChild(routes),
     CommonModule,
-    NgxPaginationModule],
+    NgxPaginationModule,
+  ],
   exports: [RouterModule,
-    NgxPaginationModule],
+    NgxPaginationModule,
+  ],
   declarations: [
     ModalComponent,
   ],

@@ -5,6 +5,14 @@
         Tabla de Normas
       </nb-card-header>
       <nb-card-body>
+        <form>
+          <div class="form-group">
+            <div class="input-group">
+              <div class="input-group-addon"><i class="glyphicon glyphicon-search"></i></div>
+              <input type="text" class="form-control" name="searchString" placeholder="Buscar..." [(ngModel)]="searchString">
+            </div>
+          </div>
+        </form>
         <div class="font-row font-main">
           <table class="table table-striped">
             <thead>
@@ -15,7 +23,7 @@
             <th>Índice</th>
             </thead>
             <tbody>
-            <tr *ngFor="let norma of normasVevo | paginate: { itemsPerPage: 10, currentPage: p }">
+            <tr *ngFor="let norma of (normasVevo | filter : searchString) | paginate: { itemsPerPage: 10, currentPage: p }">
               <td>{{norma.nombre}}</td>
               <td>{{norma.categoria}}</td>
               <td>{{norma.descripcion}}</td>
