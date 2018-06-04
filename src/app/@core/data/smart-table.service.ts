@@ -17,6 +17,7 @@ export class SmartTableService {
           'item4',
         ],
       },
+      listaItems: 'item1a item2 item3 item4',
     },
     {
       nombre: 'ISO 9002',
@@ -31,6 +32,7 @@ export class SmartTableService {
           'item4',
         ],
       },
+      listaItems: 'item1e item2 item3 item4',
     },
     {
       nombre: 'ISO 9003',
@@ -45,6 +47,7 @@ export class SmartTableService {
           'item4',
         ],
       },
+      listaItems: 'item1c item2 item3 item4',
     },
     {
       nombre: 'ISO 9004',
@@ -59,6 +62,7 @@ export class SmartTableService {
           'item4',
         ],
       },
+      listaItems: 'item1e item2 item3 item4',
     },
     {
       nombre: 'ISO 9005',
@@ -73,6 +77,7 @@ export class SmartTableService {
           'item4',
         ],
       },
+      listaItems: 'item1e item2 item3 item4',
     },
     {
       nombre: 'ISO 9005',
@@ -87,6 +92,7 @@ export class SmartTableService {
           'item4',
         ],
       },
+      listaItems: 'item1e item2 item3 item4',
     },
     {
       nombre: 'ISO 9005',
@@ -101,6 +107,7 @@ export class SmartTableService {
           'item4',
         ],
       },
+      listaItems: 'item1e item2 item3 item4',
     },
     {
       nombre: 'ISO 9005',
@@ -115,6 +122,7 @@ export class SmartTableService {
           'item4',
         ],
       },
+      listaItems: 'item1e item2 item3 item4',
     },
     {
       nombre: 'ISO 9005',
@@ -129,6 +137,7 @@ export class SmartTableService {
           'item4',
         ],
       },
+      listaItems: 'item1e item2 item3 item4',
     },
     {
       nombre: 'ISO 9005',
@@ -143,6 +152,7 @@ export class SmartTableService {
           'item4',
         ],
       },
+      listaItems: 'item1e item2 item3 item4',
     },
     {
       nombre: 'ISO 9005',
@@ -157,6 +167,7 @@ export class SmartTableService {
           'item4',
         ],
       },
+      listaItems: 'item1e item2 item3 item4',
     },
     {
       nombre: 'ISO 9005',
@@ -171,6 +182,7 @@ export class SmartTableService {
           'item4',
         ],
       },
+      listaItems: 'item1e item2 item3 item4',
     },
     {
       nombre: 'ISO 9005',
@@ -185,6 +197,7 @@ export class SmartTableService {
           'item4',
         ],
       },
+      listaItems: 'item1e item2 item3 item4',
     },
     {
       nombre: 'ISO 9005',
@@ -199,6 +212,7 @@ export class SmartTableService {
           'item4',
         ],
       },
+      listaItems: 'item1e item2 item3 item4',
     },
     {
       nombre: 'ISO 9005',
@@ -213,6 +227,22 @@ export class SmartTableService {
           'item4',
         ],
       },
+      listaItems: 'item1e item2 item3 item4',
+    },
+    {
+      nombre: 'ISO 9005',
+      categoria: 'Calidad',
+      descripcion: 'Se puede certificar la 2015',
+      link: 'https://es.wikipedia.org/wiki/ISO_9001',
+      indice: {
+        parrafo: 'Esta norma 5 tiene aocmo cpararfor aesta coass',
+        listaItemsIndice: ['itemass',
+          'item2',
+          'item3',
+          'item4',
+        ],
+      },
+      listaItems: 'itemass item2 item3 item4',
     },
     {
       nombre: 'ISO 9005',
@@ -227,6 +257,7 @@ export class SmartTableService {
           'item4',
         ],
       },
+      listaItems: 'item1e item2 item3 item4',
     },
     {
       nombre: 'ISO 9005',
@@ -241,6 +272,7 @@ export class SmartTableService {
           'item4',
         ],
       },
+      listaItems: 'item1e item2 item3 item4',
     },
     {
       nombre: 'ISO 9005',
@@ -255,6 +287,7 @@ export class SmartTableService {
           'item4',
         ],
       },
+      listaItems: 'item1e item2 item3 item4',
     },
     {
       nombre: 'ISO 9005',
@@ -269,6 +302,7 @@ export class SmartTableService {
           'item4',
         ],
       },
+      listaItems: 'item1e item2 item3 item4',
     },
     {
       nombre: 'ISO 9005',
@@ -283,6 +317,7 @@ export class SmartTableService {
           'item4',
         ],
       },
+      listaItems: 'item1e item2 item3 item4',
     },
     {
       nombre: 'ISO 9005',
@@ -297,6 +332,7 @@ export class SmartTableService {
           'item4',
         ],
       },
+      listaItems: 'item1e item2 item3 item4',
     },
     {
       nombre: 'ISO 9005',
@@ -311,20 +347,7 @@ export class SmartTableService {
           'item4',
         ],
       },
-    },
-    {
-      nombre: 'ISO 9005',
-      categoria: 'Calidad',
-      descripcion: 'Se puede certificar la 2015',
-      link: 'https://es.wikipedia.org/wiki/ISO_9001',
-      indice: {
-        parrafo: 'Esta norma 5 tiene aocmo cpararfor aesta coass',
-        listaItemsIndice: ['item1e',
-          'item2',
-          'item3',
-          'item4',
-        ],
-      },
+      listaItems: 'item1e item2 item3 item4',
     },
 
   ];

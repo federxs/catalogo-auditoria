@@ -5,7 +5,7 @@ import {Pipe, PipeTransform} from '@angular/core';
 })
 
 export class FilterPipe implements PipeTransform {
-  transform(items: any[],  searchString: string): any[] {
+  transform(items: any[], searchString: string): any[] {
     if (!items) {
       return [];
     }
@@ -13,6 +13,11 @@ export class FilterPipe implements PipeTransform {
       return items;
     }
 
-    return items.filter(singleItem => singleItem.nombre.toLowerCase().includes(searchString.toLowerCase()));
+    return items.filter(singleItem => (singleItem.nombre.toLowerCase().includes(searchString.toLowerCase()))
+      || (singleItem.indice.parrafo.toLowerCase().includes(searchString.toLowerCase()))
+      || (singleItem.categoria.toLowerCase().includes(searchString.toLowerCase()))
+      || (singleItem.descripcion.toLowerCase().includes(searchString.toLowerCase()))
+      || (singleItem.listaItems.toLowerCase().includes(searchString.toLowerCase())),
+    );
   }
 }
