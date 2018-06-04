@@ -29,7 +29,7 @@ import 'rxjs/add/operator/delay';
                    responsive
                    [right]="sidebar.id === 'right'">
         <nb-sidebar-header>
-          <a href="#" class="btn btn-hero-success main-btn">
+          <a href="https://www.frc.utn.edu.ar/" target="_blank" class="btn btn-hero-success main-btn">
             <i class="ion ion-university"></i> <span>FRC-UTN</span>
           </a>
         </nb-sidebar-header>
