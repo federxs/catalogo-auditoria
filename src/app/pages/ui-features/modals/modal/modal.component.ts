@@ -21,7 +21,7 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
       </ul>
     </div>
     <div class="modal-footer">
-      <button class="btn btn-md btn-primary" (click)="closeModal()">Save changes</button>
+      <button class="btn btn-md btn-primary" (click)="closeModal()">Cerrar</button>
     </div>
   `,
 })
