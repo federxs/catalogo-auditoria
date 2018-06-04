@@ -29,23 +29,17 @@
               </td>
             </tr>
             </tbody>
-            <pagination-controls (pageChange)="p = $event"></pagination-controls>
+            <pagination-controls (pageChange)="p = $event"
+                                 previousLabel="Anterior"
+                                 nextLabel="Siguiente"
+                                 screenReaderPaginationLabel="Paginacion"
+                                 screenReaderPageLabel="pagina"
+                                 screenReaderCurrentLabel="Estas en la pagina"></pagination-controls>
           </table>
         </div>
       </nb-card-body>
     </nb-card>
   </div>
 </div>
-
-<nb-card>
-  <nb-card-header>
-    Catalogo de Normas
-  </nb-card-header>
-
-  <nb-card-body>
-    <ng2-smart-table [settings]="settings" [source]="normas">
-    </ng2-smart-table>
-  </nb-card-body>
-</nb-card>
 
 
