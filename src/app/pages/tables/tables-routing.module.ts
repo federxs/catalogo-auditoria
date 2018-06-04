@@ -4,7 +4,7 @@ import {CommonModule} from '@angular/common';
 
 import {TablesComponent} from './tables.component';
 import {SmartTableComponent} from './smart-table/smart-table.component';
-import {ModalComponent} from '../ui-features/modals/modal/modal.component';
+import {ModalFedeComponent} from './modal/modal-fede.component';
 import {NgxPaginationModule} from 'ngx-pagination';
 
 const routes: Routes = [{
@@ -26,10 +26,10 @@ const routes: Routes = [{
     NgxPaginationModule,
   ],
   declarations: [
-    ModalComponent,
+    ModalFedeComponent,
   ],
   entryComponents: [
-    ModalComponent,
+    ModalFedeComponent,
   ],
 })
 export class TablesRoutingModule {

@@ -3,7 +3,7 @@ import {LocalDataSource} from 'ng2-smart-table';
 import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
 
 import {SmartTableService} from '../../../@core/data/smart-table.service';
-import {ModalComponent} from '../../ui-features/modals/modal/modal.component';
+import {ModalFedeComponent} from '../modal/modal-fede.component';
 
 
 @Component({
@@ -52,7 +52,7 @@ export class SmartTableComponent {
 
 
   showLargeModal(nombre, indice) {
-    const activeModal = this.modalService.open(ModalComponent, {size: 'lg', container: 'nb-layout'});
+    const activeModal = this.modalService.open(ModalFedeComponent, {size: 'lg', container: 'nb-layout'});
 
     activeModal.componentInstance.modalHeader = nombre;
     activeModal.componentInstance.parrafo = indice.parrafo;
