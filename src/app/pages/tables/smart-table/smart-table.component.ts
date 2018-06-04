@@ -1,7 +1,10 @@
 import {Component} from '@angular/core';
 import {LocalDataSource} from 'ng2-smart-table';
+import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
 
 import {SmartTableService} from '../../../@core/data/smart-table.service';
+import {ModalComponent} from '../../ui-features/modals/modal/modal.component';
+
 
 @Component({
   selector: 'ngx-smart-table',
@@ -13,7 +16,6 @@ import {SmartTableService} from '../../../@core/data/smart-table.service';
   `],
 })
 export class SmartTableComponent {
-  let
   normasVevo = [];
 
   settings = {
@@ -21,29 +23,37 @@ export class SmartTableComponent {
     columns: {
       nombre: {
         title: 'Norma',
-        type: 'string'
+        type: 'string',
       },
       categoria: {
         title: 'Categoria',
-        type: 'string'
+        type: 'string',
       },
       descripcion: {
         title: 'Descripcion',
-        type: 'string'
+        type: 'string',
       },
       link: {
         title: 'Link',
-        type: 'string'
-      }
+        type: 'string',
+      },
     },
   };
 
   normas: LocalDataSource = new LocalDataSource();
 
-  constructor(private service: SmartTableService) {
+  constructor(private service: SmartTableService, private modalService: NgbModal) {
     const data = this.service.getData();
     this.normas.load(data);
     this.normasVevo = data;
+  }
+
+
+  showLargeModal(descripcion) {
+    const activeModal = this.modalService.open(ModalComponent, {size: 'lg', container: 'nb-layout'});
+
+    activeModal.componentInstance.modalHeader = 'Large Modal';
+    activeModal.componentInstance.modalContent = descripcion;
   }
 
 }

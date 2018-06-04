@@ -12,7 +12,7 @@
 
 <div class="row">
   <div class="col-md-12">
-    <nb-card >
+    <nb-card>
       <nb-card-header>
         Tabla de Normas
       </nb-card-header>
@@ -32,9 +32,13 @@
               <td>{{norma.nombre}}</td>
               <td>{{norma.categoria}}</td>
               <td>{{norma.descripcion}}</td>
-              <td><a href="{{norma.link}}">Link</a></td>
               <td>
-                <button type="button">Boton {{i}}</button>
+                <button class="">
+                  <a href="{{norma.link}}" target="_blank"><i class="fa fa-link"></i></a>
+                </button>
+              </td>
+              <td>
+                <button type="button" (click)="showLargeModal(norma.indice)">Boton {{i}}</button>
               </td>
             </tr>
             </tbody>
