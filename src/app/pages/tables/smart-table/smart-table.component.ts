@@ -49,11 +49,12 @@ export class SmartTableComponent {
   }
 
 
-  showLargeModal(descripcion) {
+  showLargeModal(nombre, indice) {
     const activeModal = this.modalService.open(ModalComponent, {size: 'lg', container: 'nb-layout'});
 
-    activeModal.componentInstance.modalHeader = 'Large Modal';
-    activeModal.componentInstance.modalContent = descripcion;
+    activeModal.componentInstance.modalHeader = nombre;
+    activeModal.componentInstance.parrafo = indice.parrafo;
+    activeModal.componentInstance.listaItemsIndice = indice.listaItemsIndice;
   }
 
 }

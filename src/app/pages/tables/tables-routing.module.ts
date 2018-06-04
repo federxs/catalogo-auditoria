@@ -1,5 +1,6 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
+import {CommonModule} from '@angular/common';
 
 import {TablesComponent} from './tables.component';
 import {SmartTableComponent} from './smart-table/smart-table.component';
@@ -16,7 +17,8 @@ const routes: Routes = [{
 }];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
+  imports: [RouterModule.forChild(routes),
+    CommonModule],
   exports: [RouterModule],
   declarations: [
     ModalComponent

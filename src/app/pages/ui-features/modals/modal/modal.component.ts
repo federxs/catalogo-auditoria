@@ -11,7 +11,14 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
       </button>
     </div>
     <div class="modal-body">
-      {{ modalContent }}
+      <p>
+        {{parrafo}}
+      </p>
+      <ul>
+        <li *ngFor="let itemIndice of listaItemsIndice">
+          {{ itemIndice }}
+        </li>
+      </ul>
     </div>
     <div class="modal-footer">
       <button class="btn btn-md btn-primary" (click)="closeModal()">Save changes</button>
@@ -21,7 +28,8 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 export class ModalComponent {
 
   modalHeader: string;
-  modalContent: string;
+  parrafo: string;
+  listaItemsIndice: string;
 
   constructor(private activeModal: NgbActiveModal) { }
 
