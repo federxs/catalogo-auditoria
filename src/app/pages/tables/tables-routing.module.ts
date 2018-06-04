@@ -4,8 +4,8 @@ import {CommonModule} from '@angular/common';
 
 import {TablesComponent} from './tables.component';
 import {SmartTableComponent} from './smart-table/smart-table.component';
-import {ModalsComponent} from './modals/modals.component';
 import {ModalComponent} from '../ui-features/modals/modal/modal.component';
+import {NgxPaginationModule} from 'ngx-pagination';
 
 const routes: Routes = [{
   path: '',
@@ -17,11 +17,14 @@ const routes: Routes = [{
 }];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes),
-    CommonModule],
-  exports: [RouterModule],
+  imports: [
+    RouterModule.forChild(routes),
+    CommonModule,
+    NgxPaginationModule],
+  exports: [RouterModule,
+    NgxPaginationModule],
   declarations: [
-    ModalComponent
+    ModalComponent,
   ],
   entryComponents: [
     ModalComponent,

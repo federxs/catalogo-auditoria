@@ -15,7 +15,7 @@
             <th>Índice</th>
             </thead>
             <tbody>
-            <tr *ngFor="let norma of normasVevo; let i = index">
+            <tr *ngFor="let norma of normasVevo | paginate: { itemsPerPage: 10, currentPage: p }">
               <td>{{norma.nombre}}</td>
               <td>{{norma.categoria}}</td>
               <td>{{norma.descripcion}}</td>
@@ -29,6 +29,7 @@
               </td>
             </tr>
             </tbody>
+            <pagination-controls (pageChange)="p = $event"></pagination-controls>
           </table>
         </div>
       </nb-card-body>

@@ -16,6 +16,7 @@ import {ModalComponent} from '../../ui-features/modals/modal/modal.component';
   `],
 })
 export class SmartTableComponent {
+  p: number = 1;
   normasVevo = [];
 
   settings = {
