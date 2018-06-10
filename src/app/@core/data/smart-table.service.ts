@@ -88,7 +88,7 @@ export class SmartTableService {
     },
     {
       nombre: 'ISO 50001',
-      categoria: 'Ambiente',
+      categoria: 'Energía',
       descripcion: 'Sistemas de Gestión Energética - Requisitos con orientación para el uso',
       link: 'https://www.iso.org/iso-50001-energy-management.html',
       indice: {
