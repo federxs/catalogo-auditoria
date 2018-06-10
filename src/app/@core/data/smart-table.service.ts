@@ -6,7 +6,6 @@ export class SmartTableService {
   data = [
     {
       nombre: 'ISO/IEC 27000',
-      categoria: 'Seguridad',
       descripcion: 'Information security management systems — Overview and vocabulary',
       link: 'https://en.wikipedia.org/wiki/ISO/IEC_27000-series',
       indice: {
@@ -30,7 +29,6 @@ export class SmartTableService {
     },
     {
       nombre: 'ISO/IEC 27001',
-      categoria: 'Seguridad',
       descripcion: 'Information technology - Security techniques - Information security management systems - Requirements',
       link: 'https://es.wikipedia.org/wiki/ISO/IEC_27001',
       indice: {
