@@ -6,6 +6,7 @@ export class SmartTableService {
   data = [
     {
       nombre: 'ISO/IEC 27000',
+      categoria: 'Seguridad',
       descripcion: 'Information security management systems — Overview and vocabulary',
       link: 'https://en.wikipedia.org/wiki/ISO/IEC_27000-series',
       indice: {
@@ -29,6 +30,7 @@ export class SmartTableService {
     },
     {
       nombre: 'ISO/IEC 27001',
+      categoria: 'Seguridad',
       descripcion: 'Information technology - Security techniques - Information security management systems - Requirements',
       link: 'https://es.wikipedia.org/wiki/ISO/IEC_27001',
       indice: {
@@ -46,6 +48,18 @@ export class SmartTableService {
       },
       fechaRevision: 2013,
       esCertificable: true,
+    },
+    {
+      nombre: 'ISO/IEC 27002',
+      categoria: 'Seguridad',
+      descripcion: 'Tecnología de la información - Técnicas de seguridad - Código de prácticas para los controles de seguridad de la información',
+      link: 'https://es.wikipedia.org/wiki/ISO/IEC_27001',
+      indice: {
+        parrafo: 'Proporciona recomendaciones de las mejores prácticas en la gestión de la seguridad de la información a todos los interesados y responsables en iniciar, implantar o mantener sistemas de gestión de la seguridad de la información. La seguridad de la información se define en el estándar como -la preservación de la confidencialidad (asegurando que sólo quienes estén autorizados pueden acceder a la información), integridad (asegurando que la información y sus métodos de proceso son exactos y completos) y disponibilidad (asegurando que los usuarios autorizados tienen acceso a la información y a sus activos asociados cuando lo requieran)-.',
+        listaItemsIndice: 'Políticas de Seguridad: Sobre las directrices y conjunto de políticas para la seguridad de la información. Revisión de las políticas para la seguridad de la información.; Organización de la Seguridad de la Información: Trata sobre la organización interna: asignación de responsabilidades relacionadas a la seguridad de la información, segregación de funciones, contacto con las autoridades, contacto con grupos de interés especial y seguridad de la información en la gestión de proyectos.;Seguridad de los Recursos Humanos: Comprende aspectos a tomar en cuenta antes, durante y para el cese o cambio de trabajo. Para antes de la contratación se sugiere investigar los antecedentes de los postulantes y la revisión de los términos y condiciones de los contratos. Durante la contratación se propone se traten los temas de responsabilidad de gestión, concienciación, educación y capacitación en seguridad de la información. Para el caso de despido o cambio de puesto de trabajo también deben tomarse medidas de seguridad, como lo es des habilitación o actualización de privilegios o accesos.;Gestión de los Activos: En esta parte se toca la responsabilidad sobre los activos (inventario, uso aceptable, propiedad y devolución de activos), la clasificación de la información (directrices, etiquetado y manipulación, manipulación) y manejo de los soportes de almacenamiento (gestión de soporte extraíbles, eliminación y soportes físicos en tránsito).;Control de Accesos: Se refiere a los requisitos de la organización para el control de accesos, la gestión de acceso de los usuarios, responsabilidad de los usuarios y el control de acceso a sistemas y aplicaciones.;Cifrado: Versa sobre los controles como políticas de uso de controles de cifrado y la gestión de claves.;Seguridad Física y Ambiental: Habla sobre el establecimiento de áreas seguras (perímetro de seguridad física, controles físicos de entrada, seguridad de oficinas, despacho y recursos, protección contra amenazas externas y ambientales, trabajo en áreas seguras y áreas de acceso público) y la seguridad de los equipos (emplazamiento y protección de equipos, instalaciones de suministro, seguridad del cableado, mantenimiento de equipos, salida de activos fuera de las instalaciones, seguridad de equipos y activos fuera de las instalaciones, reutilización o retiro de equipo de almacenamiento, equipo de usuario desatendido y política de puesto de trabajo y bloqueo de pantalla).;Seguridad de las Operaciones: procedimientos y responsabilidades. protección contra malware. resguardo. registro de actividad y monitorización. control del software operativo. gestión de las vulnerabilidades técnicas. coordinación de la auditoría de sistemas de información.;Seguridad de las Comunicaciones: gestión de la seguridad de la red. gestión de las transferencias de información.;Adquisición de sistemas, desarrollo y mantenimiento: requisitos de seguridad de los sistemas de información. seguridad en los procesos de desarrollo y soporte. datos para pruebas.;Relaciones con los Proveedores: seguridad de la información en las relaciones con los proveedores. gestión de la entrega de servicios por proveedores.;Gestión de Incidencias que afectan a la Seguridad de la Información: gestión de las incidencias que afectan a la seguridad de la información. mejoras.;Aspectos de Seguridad de la Información para la Gestión de la Continuidad del Negocio: continuidad de la seguridad de la información. Redundancias.;Conformidad: conformidad con requisitos legales y contractuales. Revisiones de la seguridad de la información.',
+      },
+      fechaRevision: 2013,
+      esCertificable: false,
     },
 
   ];

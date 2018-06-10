@@ -17,6 +17,7 @@
           <table class="table table-striped">
             <thead>
             <th>Norma</th>
+            <th>Categoría</th>
             <th>Título</th>
             <th>Año Rev.</th>
             <th>Link</th>
@@ -25,6 +26,7 @@
             <tbody>
             <tr *ngFor="let norma of (normasVevo | filter : searchString) | paginate: { itemsPerPage: 10, currentPage: p }">
               <td>{{norma.nombre}}</td>
+              <td>{{norma.categoria}}</td>
               <td>{{norma.descripcion}}</td>
               <td>{{norma.fechaRevision}}</td>
               <td>
