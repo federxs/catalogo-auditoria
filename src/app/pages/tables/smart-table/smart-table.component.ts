@@ -51,12 +51,14 @@ export class SmartTableComponent {
   }
 
 
-  showLargeModal(nombre, indice) {
+  showLargeModal(norma) {
+    const indiceProcesado = norma.indice.listaItemsIndice.split(';');
     const activeModal = this.modalService.open(ModalFedeComponent, {size: 'lg', container: 'nb-layout'});
 
-    activeModal.componentInstance.modalHeader = nombre;
-    activeModal.componentInstance.parrafo = indice.parrafo;
-    activeModal.componentInstance.listaItemsIndice = indice.listaItemsIndice;
+    activeModal.componentInstance.listaItemsIndice = indiceProcesado;
+    activeModal.componentInstance.parrafo = norma.indice.parrafo;
+    activeModal.componentInstance.modalHeader = norma.nombre;
+    activeModal.componentInstance.certificable = norma.esCertificable;
   }
 
 }

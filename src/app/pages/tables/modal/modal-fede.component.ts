@@ -3,33 +3,14 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'ngx-modal-fede',
-  template: `
-    <div class="modal-header">
-      <span>{{ modalHeader }}</span>
-      <button class="close" aria-label="Close" (click)="closeModal()">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-    <div class="modal-body">
-      <p>
-        {{parrafo}}
-      </p>
-      <ul>
-        <li *ngFor="let itemIndice of listaItemsIndice">
-          {{ itemIndice }}
-        </li>
-      </ul>
-    </div>
-    <div class="modal-footer">
-      <button class="btn btn-md btn-primary" (click)="closeModal()">Cerrar</button>
-    </div>
-  `,
+  templateUrl: './modal-fede.component.html',
 })
 export class ModalFedeComponent {
 
   modalHeader: string;
   parrafo: string;
   listaItemsIndice: string;
+  certificable: boolean;
 
   constructor(private activeModal: NgbActiveModal) { }
 
