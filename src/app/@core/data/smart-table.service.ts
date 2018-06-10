@@ -61,7 +61,31 @@ export class SmartTableService {
       fechaRevision: 2013,
       esCertificable: false,
     },
-
+    {
+      nombre: 'OHSAS 18001',
+      categoria: 'Salud',
+      descripcion: 'SERIE DE EVALUACION EN SEGURIDAD Y SALUD OCUPACIONAL',
+      link: 'https://es.wikipedia.org/wiki/OHSAS',
+      indice: {
+        parrafo: 'OHSAS 18001 es la especificación de evaluación reconocida internacionalmente para sistemas de gestión de la salud y la seguridad en el trabajo. Una selección de los organismos más importantes de comercio, organismos internacionales de normas y de certificación la han concebido para cubrir los vacíos en los que no existe ninguna norma internacional certificable por un tercero independiente.\n' +
+        'OHSAS 18001 se ha concebido para ser compatible con ISO 9001 e ISO 14001 a fin de ayudar a las organizaciones a cumplir de forma eficaz con sus obligaciones relativas a la salud y la seguridad.',
+        listaItemsIndice: 'Planificación para identificar, evaluar y controlar los riesgos;Programa de gestión de OHSAS;Estructura y responsabilidad;Formación, concienciación y competencia;Consultoría y comunicación;Control de funcionamiento;Preparación y respuesta ante emergencias;Medición, supervisión y mejora del rendimiento',
+      },
+      fechaRevision: 2007,
+      esCertificable: true,
+    },
+    {
+      nombre: 'ISO 14001',
+      categoria: 'Ambiente',
+      descripcion: 'Sistemas de Gestión Ambiental - Requisitos con orientación para el uso',
+      link: 'https://en.wikipedia.org/wiki/ISO_14000',
+      indice: {
+        parrafo: 'La certificación ISO 14001 tiene el propósito de apoyar la aplicación de un plan de manejo ambiental en cualquier organización del sector público o privado. Fue creada por la Organización Internacional para Normalización (International Organization for Standardization - ISO), una red internacional de institutos de normas nacionales que trabajan en alianza con los gobiernos, la industria y representantes de los consumidores. Además de ISO 14001, existen otras normas ISO que se pueden utilizar como herramientas para proteger el ambiente, sin embargo, para obtener la certificación de protección al medio ambiente sólo se puede utilizar la norma ISO 14001. El grupo de normas ISO, que contiene diversas reglas internacionales que han sido uniformizadas y son voluntarias, se aplica ampliamente en todos los sectores de la industria',
+        listaItemsIndice: 'Reducir los costes: como la norma ISO 14001 requiere un compromiso con la mejora continua del SGA, el establecimiento de objetivos de mejora ayuda a la organización a un uso más eficiente de las materias primas, ayudando así a reducir los costes;Gestión del cumplimiento de la legislación: la certificación ISO 14001 puede ayudar a reducir el esfuerzo necesario para gestionar el cumplimiento legal y a la gestión de sus riesgos ambientales;Reducir la duplicación de esfuerzos: su sistema de gestión permite integrar los requisitos de ésta y otras normas de gestión en un único sistema de negocio para reducir la duplicación de esfuerzos y los costes;Gestionar su reputación: la certificación ISO 14001 le ayuda a reducir los riesgos asociados a cualquier coste o daño a su reputación asociada a sanciones, y construye su imagen pública hacia sus clientes, organismos reguladores y principales partes interesadas;Ser el proveedor elegido y aumentar su ventaja competitiva: le permite trabajar con las empresas que valoran las organizaciones que son respetuosas con el medio ambiente;Facilidad de integración con otras normas de sistemas de gestión con la norma ISO 9001(Calidad), OHSAS 18001 (Seguridad y Salud laboral), ISO 50001 (Energía), y otras normas basadas en sistemas de gestión;',
+      },
+      fechaRevision: 2015,
+      esCertificable: true,
+    },
   ];
 
   getData() {
