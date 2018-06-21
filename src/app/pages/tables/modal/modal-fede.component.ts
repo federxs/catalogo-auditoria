@@ -7,7 +7,8 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class ModalFedeComponent {
 
-  modalHeader: string;
+  nombre: string;
+  descripcion: string;
   parrafo: string;
   listaItemsIndice: string;
   certificable: boolean;

@@ -57,7 +57,8 @@ export class SmartTableComponent {
 
     activeModal.componentInstance.listaItemsIndice = indiceProcesado;
     activeModal.componentInstance.parrafo = norma.indice.parrafo;
-    activeModal.componentInstance.modalHeader = norma.nombre;
+    activeModal.componentInstance.nombre = norma.nombre;
+    activeModal.componentInstance.descripcion = norma.descripcion;
     activeModal.componentInstance.certificable = norma.esCertificable;
   }
 
