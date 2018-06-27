@@ -27,23 +27,28 @@ export const MENU_ITEMS: NbMenuItem[] = [
         children: [
             {
                 title: 'ISO',
-                link: '/pages/tables/smart-table1',
+                url: 'https://www.iso.org/home.html',
+                target: '_blank',
             },
             {
                 title: 'NIST',
-                link: '/pages/tables/smart-table2',
+                url: 'https://www.nist.gov/',
+                target: '_blank',
             },
             {
                 title: 'EIA',
-                link: '/pages/tables/smart-table3',
+                url: 'https://www.ecianow.org/standards-practices/standards/',
+                target: '_blank',
             },
             {
                 title: 'IEEE',
-                link: '/pages/tables/smart-table4',
+                url: 'https://www.ieee.org/standards/index.html',
+                target: '_blank',
             },
             {
-                title: 'MIT',
-                link: '/pages/tables/smart-table5',
+                title: 'COBIT 5',
+                url: 'http://www.isaca.org/COBIT/Pages/COBIT-5-spanish.aspx',
+                target: '_blank',
             }
         ],
     },
@@ -62,7 +67,7 @@ export const MENU_ITEMS: NbMenuItem[] = [
             {
                 title: 'Rol del Auditor',
                 link: '/pages/tables/smart-table8',
-            }
+            },
         ],
     },
     {
@@ -72,7 +77,7 @@ export const MENU_ITEMS: NbMenuItem[] = [
             {
                 title: 'Nosotros',
                 link: '/pages/tables/smart-table12',
-            }
-        ]
-    }
+            },
+        ],
+    },
 ];
